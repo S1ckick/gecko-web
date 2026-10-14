@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 580" role="img" aria-labelledby="sketch-title sketch-desc">
+  <title id="sketch-title">Рецептор и лиганд в кармане связывания</title>
+  <desc id="sketch-desc">Схематический белковый рецептор показан мягким зелёным контуром. В его кармане расположен лиганд с ароматическим кольцом. Пунктиром обозначены возможные взаимодействия. Иллюстрация не представляет конкретную расчётную структуру.</desc>
+  <defs>
+    <linearGradient id="protein-surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#86aa98" stop-opacity=".27"/>
+      <stop offset="1" stop-color="#6a957f" stop-opacity=".10"/>
+    </linearGradient>
+    <linearGradient id="protein-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a4c2af" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#6e9b80" stop-opacity=".45"/>
+    </linearGradient>
+  </defs>
+
+  <!-- The protein surface forms an open binding pocket around the ligand. -->
+  <path d="M445 125
+    C405 74 351 60 290 71
+    C243 56 192 74 165 105
+    C117 115 91 161 95 207
+    C69 241 72 289 94 324
+    C82 370 105 415 143 435
+    C160 479 207 501 249 494
+    C292 518 345 505 372 480
+    C418 485 453 454 461 418
+    C493 394 502 355 486 319
+    C471 288 447 306 425 341
+    C398 377 350 414 294 399
+    C245 385 225 351 221 310
+    C216 269 223 235 251 213
+    C285 183 327 185 353 204
+    C384 225 407 183 445 125Z"
+    fill="url(#protein-surface)" stroke="url(#protein-edge)" stroke-width="2.5"
+    stroke-linejoin="round"/>
+
+  <!-- Quiet contour lines give the receptor volume without imitating ribbons. -->
+  <g fill="none" stroke="#94b49e" stroke-opacity=".24" stroke-width="1.5" stroke-linecap="round">
+    <path d="M132 193C129 144 178 113 216 115S293 97 338 109 385 138 396 155"/>
+    <path d="M134 235C111 275 127 318 146 345S162 405 207 435 283 467 324 458"/>
+    <path d="M180 173C156 189 153 219 155 252S174 301 174 331 195 378 218 388"/>
+    <path d="M231 153C266 135 307 137 333 151"/>
+    <path d="M222 453C265 489 345 475 374 452S424 404 439 369"/>
+    <path d="M159 411C153 386 168 369 171 349"/>
+  </g>
+
+  <!-- Outline of the cavity: the ligand sits in the unfilled part of the protein. -->
+  <path d="M256 218C279 197 318 199 346 221"
+    fill="none" stroke="#a8c5ae" stroke-opacity=".50" stroke-width="2" stroke-dasharray="3 7"/>
+  <path d="M235 301C238 347 263 373 302 383S371 373 395 347"
+    fill="none" stroke="#a8c5ae" stroke-opacity=".50" stroke-width="2" stroke-dasharray="3 7"/>
+
+  <!-- Noncovalent contacts are separate from the solid ligand bonds. -->
+  <g fill="none" stroke="#a6d9b7" stroke-width="2" stroke-dasharray="4 6" stroke-linecap="round">
+    <path d="M209 221L249 253"/>
+    <path d="M389 184L412 258"/>
+    <path d="M331 361L357 433"/>
+  </g>
+  <g fill="#759b84" stroke="#b0c8b5" stroke-width="1.5">
+    <circle cx="209" cy="221" r="5"/>
+    <circle cx="389" cy="184" r="5"/>
+    <circle cx="357" cy="433" r="5"/>
+  </g>
+
+  <!-- Skeletal ligand drawing: an aromatic ring and three substituents. -->
+  <g fill="none" stroke="#c9f17d" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M289 271L325 250L361 271L361 312L325 333L289 312Z"/>
+    <path d="M298 276L325 260M351 278V306M325 322L299 307" stroke-width="2.2"/>
+    <path d="M289 271L260 254"/>
+    <path d="M361 271L390 254L410 266"/>
+    <path d="M325 333V351"/>
+  </g>
+  <g fill="#132b25">
+    <circle cx="251" cy="250" r="12"/>
+    <rect x="411" y="253" width="42" height="25" rx="4"/>
+    <circle cx="325" cy="364" r="12"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="21" font-weight="500" fill="#a5dcd8">
+    <text x="235" y="257" text-anchor="middle">H</text>
+    <text x="251" y="257" text-anchor="middle">O</text>
+    <text x="413" y="273">NH<tspan font-size="12" dy="4">2</tspan></text>
+    <text x="325" y="371" text-anchor="middle">O</text>
+    <text x="342" y="371" text-anchor="middle">H</text>
+  </g>
+
+  <!-- Direct labels make the sketch understandable outside the webpage. -->
+  <g font-family="Arial, sans-serif">
+    <g fill="none" stroke="#9cb7a2" stroke-width="1.2" stroke-linecap="round">
+      <path d="M449 92H492V122L439 135"/>
+      <path d="M235 187H203L192 201"/>
+    </g>
+    <text x="448" y="80" fill="#c2d3c6" font-size="14" letter-spacing="1.5" text-anchor="middle">РЕЦЕПТОР</text>
+    <text x="244" y="183" fill="#9bb9a1" font-size="12">Карман связывания</text>
+    <path d="M387 470H424V435L373 328"
+      fill="none" stroke="#c9f17d" stroke-opacity=".7" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="388" y="492" fill="#c9f17d" font-size="14" letter-spacing="1.5">ЛИГАНД</text>
+    <path d="M158 543H185" fill="none" stroke="#a6d9b7" stroke-width="2" stroke-dasharray="4 6"/>
+    <text x="197" y="547" fill="#9bb9a1" font-size="12">Возможные взаимодействия</text>
+  </g>
+</svg>
