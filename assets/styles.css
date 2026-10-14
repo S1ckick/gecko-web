@@ -49,9 +49,9 @@ html.js .site-header nav:not(.is-open){display:none}
 .screenshot-image{border-radius:7px}
 }
 
-/* Original support logos; the platform banner keeps its official colours. */
+/* Original support logos: transparent PNGs shown whole on the section background. */
 .support-logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:26px}
-.support-logo{display:flex;align-items:center;justify-content:center;min-width:0;height:180px;border-radius:8px;background:#fff;overflow:hidden}
+.support-logo{display:flex;align-items:center;justify-content:center;min-width:0;height:180px;border-radius:8px;background:transparent;overflow:hidden}
 .support-logo-fund img{width:236px;height:auto;max-width:calc(100% - 40px)}
-.support-logo-platform img{width:100%;height:100%;max-width:none;object-fit:cover}
+.support-logo-platform img{width:auto;height:100%;max-width:100%;object-fit:contain}
 @media(max-width:800px){.support-logos{grid-template-columns:1fr;gap:14px}.support-logo{height:160px}}
